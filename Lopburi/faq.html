@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Hormkrachay Pasture Farm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&family=Playfair+Display:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-links">
+      <a href="index.html#about-expanded" data-i18n="nav_about">ABOUT US</a>
+      <a href="index.html#farm-expanded"        data-i18n="nav_farm">OUR FARM</a>
+      <a href="index.html#eggs-expanded"   data-i18n="nav_eggs">OUR EGGS</a>
+      <a href="faq.html"         data-i18n="nav_faq">FAQ</a>
+    </div>
+    <a href="index.html" class="nav-brand" data-i18n="nav_brand">LOPBURI PASTURE</a>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span class="lang-opt" data-lang="en">EN</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-opt" data-lang="th">TH</span>
+      </button>
+      <a href="index.html#contact-expanded" class="btn-nav" data-i18n="nav_cta">CONTACT US</a>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose">✕</button>
+    <div class="drawer-links">
+      <a href="index.html#about-expanded" onclick="closeDrawer()" data-i18n="nav_about">ABOUT US</a>
+      <a href="index.html#farm-expanded"        onclick="closeDrawer()" data-i18n="nav_farm">OUR FARM</a>
+      <a href="index.html#eggs-expanded"   onclick="closeDrawer()" data-i18n="nav_eggs">OUR EGGS</a>
+      <a href="faq.html"         onclick="closeDrawer()" data-i18n="nav_faq">FAQ</a>
+    </div>
+    <a href="index.html#contact-expanded" onclick="closeDrawer()" class="drawer-cta" data-i18n="nav_cta">CONTACT US</a>
+  </div>
+
+  <!-- PAGE HERO BAND -->
+  <div class="page-band">
+    <div class="container">
+      <span class="page-band-num">04</span>
+      <h1 class="page-band-title" data-i18n="nav_faq">FAQ</h1>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="section section-off" id="faq">
+    <div class="container faq-container">
+      <div class="faq-left">
+        <div class="section-label" data-i18n="faq_label">04 — FAQ</div>
+        <h2 class="faq-h2" data-i18n="faq_title">GOT<br>QUESTIONS?</h2>
+        <p class="body-text" data-i18n="faq_sub">Quick answers to common questions about our farming methods, egg quality, and delivery.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span data-i18n="faq_q1">What do the hens eat?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a1">Our hens graze freely on open pasture and are supplemented with a non-GMO grain mix and Black Soldier Fly larvae for natural insect protein. No synthetic additives, antibiotics, or growth hormones — ever.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span data-i18n="faq_q2">Why are the yolks so orange?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a2">The deep amber yolk colour comes from carotenoids — natural pigments found in the grasses, insects, and forage our hens eat daily. This is a reliable marker of both diet quality and nutritional density.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span data-i18n="faq_q3">Can we visit the farm?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a3">Yes — we welcome scheduled visits from wholesale buyers, chefs, and media. Please contact us to arrange a farm tour. We believe in full transparency and are proud to show you exactly how we operate.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span data-i18n="faq_q4">How fast is delivery to Bangkok?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a4">Eggs are collected, graded, and dispatched within 24 hours. Bangkok delivery typically arrives within 48 hours of collection, maintaining peak freshness. We operate on a scheduled twice-weekly run for wholesale clients.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span data-i18n="faq_q5">What is the minimum order?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a5">Minimum order is 1,000 eggs per month for the standard B2B subscription. Trial boxes (30 eggs) are available on request before committing. Payment terms: COD or 7-day net for established accounts.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span data-i18n="faq_q6">What sizes are available?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a6">We grade by weight: No.0 Jumbo (70g+), No.1 Extra Large (65–70g), No.2 Large (60–65g), No.3 Medium (55–60g), No.4 Small (under 55g). No.2 Large is our hero SKU at ฿8.55/egg for volume accounts.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER MARQUEE -->
+  <a href="index.html#contact-expanded" class="footer-marquee">
+    <div class="footer-marquee-inner">
+      <div class="footer-marquee-track">
+        <span class="fm-item">READY TO ORDER</span>
+        <span class="fm-sep">·</span>
+        <span class="fm-item">REQUEST YOUR TRIAL BOX</span>
+        <span class="fm-sep">·</span>
+        <span class="fm-item">48 HOURS FARM TO KITCHEN</span>
+        <span class="fm-sep">·</span>
+        <span class="fm-item">READY TO ORDER</span>
+        <span class="fm-sep">·</span>
+        <span class="fm-item">REQUEST YOUR TRIAL BOX</span>
+        <span class="fm-sep">·</span>
+        <span class="fm-item">48 HOURS FARM TO KITCHEN</span>
+        <span class="fm-sep">·</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- SITE DIRECTORY -->
+  <section class="site-dir">
+    <div class="site-dir-inner">
+      <div class="site-dir-col">
+        <p class="sdc-head" data-i18n="dir_col_navigate">NAVIGATE</p>
+        <ul class="sdc-list">
+          <li><a href="index.html"        data-i18n="dir_home">Home</a></li>
+          <li><a href="index.html#about-expanded"  data-i18n="nav_about">About Us</a></li>
+          <li><a href="index.html#farm-expanded"         data-i18n="nav_farm">Our Farm</a></li>
+          <li><a href="index.html#eggs-expanded"    data-i18n="nav_eggs">Our Eggs</a></li>
+          <li><a href="faq.html"          data-i18n="nav_faq">FAQ</a></li>
+          <li><a href="index.html#contact-expanded"      data-i18n="dir_contact">Order</a></li>
+        </ul>
+      </div>
+      <div class="site-dir-col">
+        <p class="sdc-head" data-i18n="footer_contact_head">CONTACT</p>
+        <ul class="sdc-list">
+          <li data-i18n="footer_location">Lopburi Province, Thailand</li>
+          <li>hello@lopburipasture.com</li>
+          <li>+66 8X XXX XXXX</li>
+          <li><a href="#" data-i18n="footer_whatsapp">WhatsApp →</a></li>
+        </ul>
+      </div>
+      <div class="site-dir-col">
+        <p class="sdc-head" data-i18n="dir_col_legal">LEGAL</p>
+        <ul class="sdc-list">
+          <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
+          <li><a href="#" data-i18n="footer_terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER BAR -->
+  <div class="footer-bar">
+    <div class="footer-bottom">
+      <span data-i18n="footer_copy">© 2026 Hormkrachay Pasture Farm. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer_terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
