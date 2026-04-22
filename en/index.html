@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hormkrachay Pasture Farm — Pasture-Raised Eggs, Thailand</title>
+  <meta name="theme-color" content="#282828" />
+  <meta name="description" content="Premium pasture-raised eggs from Hormkrachay Pasture Farm. Free-range hens on open grassland in Thailand." />
+  <meta name="keywords" content="pasture raised eggs, free range eggs, Hormkrachay, Thailand, premium eggs, Lohmann Brown, non-gmo, restaurant supply" />
+  <meta property="og:title" content="Hormkrachay Pasture Farm — Pasture-Raised Eggs, Thailand" />
+  <meta property="og:description" content="Premium pasture-raised eggs from Hormkrachay Pasture Farm. Free-range hens on open grassland in Thailand." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hormkrachaypasturefarm.com/en/" />
+  <meta property="og:image" content="../hero.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&family=Barlow+Condensed:wght@600;700&family=Cormorant+Garamond:ital,wght@0,300;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;700;800;900&family=Roboto:wght@300;400&family=Playfair+Display:wght@400&family=Noto+Sans+Thai:wght@100;300;400;500;600;700;800;900&family=Tiviraj&family=Mitr:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Host+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <link rel="alternate" hreflang="en" href="https://hormkrachaypasturefarm.com/en/" />
+  <link rel="alternate" hreflang="th" href="https://hormkrachaypasturefarm.com/th/" />
+  <link rel="alternate" hreflang="x-default" href="https://hormkrachaypasturefarm.com/en/" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav nav--hero" id="nav">
+    <div class="nav-links">
+      <a href="#about" data-i18n="nav_about">ABOUT US</a>
+      <a href="#farm-expanded" data-i18n="nav_farm">OUR FARM</a>
+      <a href="#eggs-expanded" data-i18n="nav_eggs">OUR EGGS</a>
+    </div>
+    <a href="./" class="nav-brand">
+      <img src="../logo.png" alt="Hormkrachay Pasture Farm" class="nav-logo" />
+    </a>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span class="lang-opt" data-lang="en">EN</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-opt" data-lang="th">TH</span>
+      </button>
+      <a href="javascript:void(0)" class="btn-nav" data-i18n="nav_cta">CONTACT US</a>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose">✕</button>
+    <div class="drawer-links">
+      <a href="#about" onclick="closeDrawer()" data-i18n="nav_about">ABOUT US</a>
+      <a href="#farm-expanded" onclick="closeDrawer()" data-i18n="nav_farm">OUR FARM</a>
+      <a href="#eggs-expanded" onclick="closeDrawer()" data-i18n="nav_eggs">OUR EGGS</a>
+    </div>
+    <a href="javascript:void(0)" onclick="closeDrawer(); setTimeout(scrollToContact, 300);" class="drawer-cta" data-i18n="nav_cta">CONTACT US</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <video class="hero-video" id="heroVideo" autoplay muted playsinline>
+        <source src="../Hero1.webm" type="video/webm" />
+        <source src="../Hero1.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-center">
+        <h1 class="hero-h1" data-i18n="hero_h1">Pasture raised eggs</h1>
+        <p class="hero-sub" data-i18n="hero_sub">Raised on open pasture in Lopburi, Thailand.<br>On a farm where quality has never been negotiable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <div class="about-scroll-wrapper" id="aboutScrollWrapper" style="--scroll-progress: 0;">
+    <div id="about-expanded" class="scroll-anchor"></div>
+    <section class="about-slide-container" id="about">
+
+      <div class="about-slide-bg">
+        <img src="../about.jpg" alt="Hens on pasture at Hormkrachay Pasture Farm" class="about-bg-img" loading="lazy" />
+        <div class="about-slide-overlay"></div>
+        <p class="about-slide-eyebrow" data-i18n="about_eyebrow">HOW WE STARTED</p>
+        <div class="about-slide-bg-content">
+          <h2 class="about-slide-heading" data-i18n="about_heading">ALWAYS FREE RANGE, PASTURE RAISED EGGS</h2>
+        </div>
+      </div>
+
+      <div class="about-slide-panel">
+        <div class="about-slide-panel-inner">
+          <div class="panel-text-block">
+            <h3 class="panel-subtitle" data-i18n="about_panel_sub">OUR STORY.<br>OUR LAND.</h3>
+            <p class="panel-heading" data-i18n="about_text_r">What started as a small cattle and crop farm in the middle of Lopburi Province has grown, across three generations, become something else. Today, we raise pasture hens the way eggs were meant to be produced — slowly, attentively, and without shortcuts. Every decision, from the breed we keep to the grasses we grow, is made with one thing in mind: <br><br> <em>A better egg follows naturally from better care.</em></p>
+          </div>
+          <div class="panel-image-block">
+            <img src="../aboutdrawer.jpg" alt="Hormkrachay Pasture Farm Detail" loading="lazy" />
+          </div>
+          <div class="panel-footer-block">
+            <p class="panel-footer-text" data-i18n="about_footer">Most egg producers in Thailand use the word "farm" generously. Behind it is usually an indoor facility — indoor sheds, artificial lighting, cages stacked in rows and nothing like what the word suggests. Ours is a farm you could walk across. Open pasture, Open sky, hens that live outside every day of their lives.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- FARM SECTION -->
+  <div class="about-scroll-wrapper" id="farmScrollWrapper" style="--scroll-progress: 0;">
+    <div id="farm-expanded" class="scroll-anchor"></div>
+    <section class="about-slide-container" id="farm">
+
+      <div class="about-slide-bg slide-bg--right">
+        <img src="../ourfarm.jpg" alt="Cows on pasture at Hormkrachay Pasture Farm" class="about-bg-img" loading="lazy" />
+        <div class="about-slide-overlay"></div>
+        <p class="about-slide-eyebrow" data-i18n="farm_eyebrow">ALL FAMILY OWNED</p>
+        <div class="about-slide-bg-content">
+          <h2 class="about-slide-heading" data-i18n="farm_heading">OUR BEAUTIFUL FARM LOCATIONS</h2>
+          <a href="javascript:void(0)" class="farm-visit-btn" data-i18n="farm_visit_btn">REQUEST A FARM VISIT</a>
+        </div>
+      </div>
+
+      <div class="about-slide-panel slide-panel--left">
+        <div class="about-slide-panel-inner">
+          <div class="panel-text-block">
+            <h3 class="panel-subtitle" data-i18n="farm_panel_sub">SINGLE FARM.<br>OPEN PASTURE.</h3>
+            <p class="panel-heading" data-i18n="farm_text_r">Across 40 hectares of living pasture, our hens move from paddock to paddock on a rotation that keeps the grass growing and the soil healthy. We use no pesticides, no herbicides, and no synthetic fertilisers. Our flock spends every day outdoors on fresh grass, foraging as hens are meant to. The result is land that gets richer the longer we farm it, and a flock that lives the way nature intended. <br><br> <em>Better pasture, better hens, better eggs.</em></p>
+          </div>
+          <div class="panel-image-block">
+            <img src="../ourfarm.jpg" alt="Hormkrachay Pasture Farm Detail" loading="lazy" />
+          </div>
+          <div class="panel-footer-block">
+            <p class="panel-footer-text" data-i18n="farm_footer">Every egg comes from this single farm, gathered by hand, graded by our team, and delivered without passing through a supplier or distributor. It's how we keep our standards and our promise intact.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- EGGS SECTION -->
+  <div class="about-scroll-wrapper" id="eggsScrollWrapper" style="--scroll-progress: 0;">
+    <div id="eggs-expanded" class="scroll-anchor"></div>
+    <section class="about-slide-container" id="eggs">
+
+      <div class="about-slide-bg">
+        <img src="../eggs.jpg" alt="Rich pasture raised eggs" class="about-bg-img" loading="lazy" />
+        <div class="about-slide-overlay"></div>
+        <p class="about-slide-eyebrow" data-i18n="eggs_eyebrow">PASTURE RAISED · NON-GMO FEED</p>
+        <div class="about-slide-bg-content">
+          <h2 class="about-slide-heading" data-i18n="eggs_heading">THE PERFECT <br> EGG</h2>
+        </div>
+      </div>
+
+      <div class="about-slide-panel">
+        <div class="about-slide-panel-inner">
+          <div class="panel-text-block">
+            <h3 class="panel-subtitle" data-i18n="eggs_panel_sub">RICH YOLKS.<br>FIRM WHITES.</h3>
+            <p class="panel-heading" data-i18n="eggs_side_heading">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+          </div>
+          <div class="panel-image-block">
+            <img src="../pastureraised.jpg" alt="Pasture Raised Eggs" loading="lazy" />
+          </div>
+          <div class="panel-footer-block">
+            <p class="panel-footer-text" data-i18n="eggs_subheader">Pasture raised egg is the highest standard in egg production — nutritionally and ethically. Every hen on our farm lives on open pasture for her entire laying life, never confined, never indoors.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="about-scroll-wrapper" id="contactScrollWrapper" style="--scroll-progress: 0;">
+    <div id="contact-expanded" class="scroll-anchor"></div>
+    <section class="about-slide-container" id="contact-slide">
+
+      <div class="about-slide-bg slide-bg--right">
+        <img src="../contact.jpg" alt="Contact Hormkrachay Pasture Farm" class="about-bg-img" loading="lazy" />
+        <div class="about-slide-overlay"></div>
+      </div>
+
+      <div class="about-slide-panel slide-panel--left">
+        <div class="contact-slide-inner">
+          <h2 class="contact-huge-title" data-i18n="contact_title">CONTACT</h2>
+
+          <div class="contact-grid">
+            <div class="contact-intro-col">
+              <p class="contact-intro-text" data-i18n="contact_intro">We work directly with restaurants and kitchens. For wholesale supply, single orders, buying enquiries, or any questions about our eggs — you can reach us through the following.</p>
+            </div>
+
+            <div class="contact-details-grid">
+              <div class="contact-block contact-block--line">
+                <div class="contact-block-text">
+                  <h4 data-i18n="contact_h_new">Line Official Account</h4>
+                  <p data-i18n="contact_t_new1">@line</p>
+                  <a href="#" data-i18n="contact_t_new2"></a>
+                </div>
+                <div class="line-qr-wrapper">
+                  <img src="https://qr-official.line.me/gs/M_437vqbqw_BW.png?oat_content=qr" alt="Line QR Code" class="line-qr" loading="lazy" />
+                </div>
+              </div>
+
+              <div class="contact-block">
+                <h4 data-i18n="contact_h_addr">Address</h4>
+                <a href="https://maps.app.goo.gl/3kBtWCB1ZJcwkwye9" target="_blank" data-i18n="contact_t_addr">154 Tambon Niyomchai,<br>Sa Bot District, Lopburi 15240<br>Thailand</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="contact-map">
+            <iframe
+              src="https://maps.google.com/maps?q=15.230962,100.943184&z=17&output=embed"
+              width="100%"
+              height="180"
+              style="border:0; display:block; margin-top:24px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="minimal-footer">
+    <div class="minimal-footer-inner">
+      <div class="mf-left">
+        <span data-i18n="footer_copy">© 2026 Hormkrachay Pasture Farm. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
