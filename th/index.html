@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ฮอร์มกระชาย พาสเจอร์ฟาร์ม — ไข่ไก่ Pasture Raised จากประเทศไทย</title>
+  <meta name="theme-color" content="#282828" />
+  <meta name="description" content="ไข่ไก่ Pasture Raised คุณภาพสูงจากฮอร์มกระชาย พาสเจอร์ฟาร์ม แม่ไก่ที่ใช้ชีวิตอยู่บนทุ่งหญ้าเปิดในจังหวัดลพบุรี ประเทศไทย" />
+  <meta name="keywords" content="ไข่ไก่ pasture raised, ไข่ไก่ free range, ฮอร์มกระชาย, ลพบุรี, ไข่ไก่คุณภาพสูง, Lohmann Brown, non-gmo" />
+  <meta property="og:title" content="ฮอร์มกระชาย พาสเจอร์ฟาร์ม — ไข่ไก่ Pasture Raised จากประเทศไทย" />
+  <meta property="og:description" content="ไข่ไก่ Pasture Raised คุณภาพสูงจากฮอร์มกระชาย พาสเจอร์ฟาร์ม แม่ไก่ที่ใช้ชีวิตอยู่บนทุ่งหญ้าเปิดในจังหวัดลพบุรี" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hormkrachaypasturefarm.com/th/" />
+  <meta property="og:image" content="../hero.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&family=Barlow+Condensed:wght@600;700&family=Cormorant+Garamond:ital,wght@0,300;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;700;800;900&family=Roboto:wght@300;400&family=Playfair+Display:wght@400&family=Noto+Sans+Thai:wght@100;300;400;500;600;700;800;900&family=Tiviraj&family=Mitr:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Host+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <link rel="alternate" hreflang="en" href="https://hormkrachaypasturefarm.com/en/" />
+  <link rel="alternate" hreflang="th" href="https://hormkrachaypasturefarm.com/th/" />
+  <link rel="alternate" hreflang="x-default" href="https://hormkrachaypasturefarm.com/en/" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav nav--hero" id="nav">
+    <div class="nav-links">
+      <a href="#about" data-i18n="nav_about">เกี่ยวกับเรา</a>
+      <a href="#farm-expanded" data-i18n="nav_farm">ฟาร์มของเรา</a>
+      <a href="#eggs-expanded" data-i18n="nav_eggs">ไข่ไก่ของเรา</a>
+    </div>
+    <a href="./" class="nav-brand">
+      <img src="../logo.png" alt="Hormkrachay Pasture Farm" class="nav-logo" />
+    </a>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span class="lang-opt" data-lang="en">EN</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-opt" data-lang="th">TH</span>
+      </button>
+      <a href="javascript:void(0)" class="btn-nav" data-i18n="nav_cta">ติดต่อเรา</a>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose">✕</button>
+    <div class="drawer-links">
+      <a href="#about" onclick="closeDrawer()" data-i18n="nav_about">เกี่ยวกับเรา</a>
+      <a href="#farm-expanded" onclick="closeDrawer()" data-i18n="nav_farm">ฟาร์มของเรา</a>
+      <a href="#eggs-expanded" onclick="closeDrawer()" data-i18n="nav_eggs">ไข่ไก่ของเรา</a>
+    </div>
+    <a href="javascript:void(0)" onclick="closeDrawer(); setTimeout(scrollToContact, 300);" class="drawer-cta" data-i18n="nav_cta">ติดต่อเรา</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <video class="hero-video" id="heroVideo" autoplay muted playsinline>
+        <source src="../Hero1.webm" type="video/webm" />
+        <source src="../Hero1.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-center">
+        <h1 class="hero-h1" data-i18n="hero_h1">Pasture raised eggs</h1>
+        <p class="hero-sub" data-i18n="hero_sub">เราคือฟาร์มไข่ไก่ Pasture raised จากฟาร์มในจังหวัดลพบุรี <br> แม่ไก่ของเราทุกตัวถูกเลี้ยงโดยให้มีคุณภาพชีวิตที่ดีที่สุด</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <div class="about-scroll-wrapper" id="aboutScrollWrapper" style="--scroll-progress: 0;">
+    <div id="about-expanded" class="scroll-anchor"></div>
+    <section class="about-slide-container" id="about">
+
+      <div class="about-slide-bg">
+        <img src="../about.jpg" alt="แม่ไก่บนทุ่งหญ้าที่ฮอร์มกระชาย พาสเจอร์ฟาร์ม" class="about-bg-img" loading="lazy" />
+        <div class="about-slide-overlay"></div>
+        <p class="about-slide-eyebrow" data-i18n="about_eyebrow">HOW WE STARTED</p>
+        <div class="about-slide-bg-content">
+          <h2 class="about-slide-heading" data-i18n="about_heading">เกี่ยวกับเรา</h2>
+        </div>
+      </div>
+
+      <div class="about-slide-panel">
+        <div class="about-slide-panel-inner">
+          <div class="panel-text-block">
+            <h3 class="panel-subtitle" data-i18n="about_panel_sub">OUR STORY.<br>OUR LAND.</h3>
+            <p class="panel-heading" data-i18n="about_text_r">ฟาร์มของเรามีจุดเริ่มต้นมาจากการทำพืชไร่และเลี้ยงวัวทั่วไป บนพื้นที่ที่สืบทอดกันมานานกว่า 3 ชั่วอายุคน ใจกลางจังหวัดลพบุรี <br><br> <em>ไข่ไก่ที่ดี ย่อมมาจากความใส่ใจที่ดีกว่า</em></p>
+          </div>
+          <div class="panel-image-block">
+            <img src="../aboutdrawer.jpg" alt="ฮอร์มกระชาย พาสเจอร์ฟาร์ม" loading="lazy" />
+          </div>
+          <div class="panel-footer-block">
+            <p class="panel-footer-text" data-i18n="about_footer">คำว่า "ฟาร์ม" ในอุตสาหกรรมไข่ไก่ของเรามักถูกเรียกใช้กันอย่างกว้างขวาง แต่เบื้องหลัง "ฟาร์ม" เหล่านั้นมักเป็นระบบโรงเรือนปิด สำหรับเรา ฟาร์มคือพื้นที่ที่ไก่ทุกตัวสามารถเดินและสัมผัสผืนดิน ได้ใช้ชีวิตอยู่ในทุ่งหญ้ากว้างและได้รับแสงแดดตามธรรมชาติทุกๆวัน</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- FARM SECTION -->
+  <div class="about-scroll-wrapper" id="farmScrollWrapper" style="--scroll-progress: 0;">
+    <div id="farm-expanded" class="scroll-anchor"></div>
+    <section class="about-slide-container" id="farm">
+
+      <div class="about-slide-bg slide-bg--right">
+        <img src="../ourfarm.jpg" alt="วัวบนทุ่งหญ้าที่ฮอร์มกระชาย พาสเจอร์ฟาร์ม" class="about-bg-img" loading="lazy" />
+        <div class="about-slide-overlay"></div>
+        <p class="about-slide-eyebrow" data-i18n="farm_eyebrow">ALL FAMILY OWNED</p>
+        <div class="about-slide-bg-content">
+          <h2 class="about-slide-heading" data-i18n="farm_heading">ฟาร์มของเรา</h2>
+          <a href="javascript:void(0)" class="farm-visit-btn" data-i18n="farm_visit_btn">ขอเยี่ยมชมฟาร์ม</a>
+        </div>
+      </div>
+
+      <div class="about-slide-panel slide-panel--left">
+        <div class="about-slide-panel-inner">
+          <div class="panel-text-block">
+            <h3 class="panel-subtitle" data-i18n="farm_panel_sub">SINGLE FARM.<br>OPEN PASTURE.</h3>
+            <p class="panel-heading" data-i18n="farm_text_r">บนพื้นที่ทุ่งหญ้ากว่า 250 ไร่ แม่ไก่ของเราจะถูกปล่อยให้ใช้ชีวิตอยู่ในทุ่งหญ้าและถูกจัดการอย่างเป็นระบบ เราไม่ใช้ยาฆ่าแมลง ยากำจัดวัชพืช และปุ๋ยเคมีทุกชนิด <br><br> <em>แม่ไก่ที่อาศัยอยู่ในทุ่งหญ้าที่ดีย่อมมีความสุข และให้ไข่ไก่ที่ดีกว่า</em></p>
+          </div>
+          <div class="panel-image-block">
+            <img src="../ourfarm.jpg" alt="ฮอร์มกระชาย พาสเจอร์ฟาร์ม" loading="lazy" />
+          </div>
+          <div class="panel-footer-block">
+            <p class="panel-footer-text" data-i18n="farm_footer">ไข่ไก่ทุกฟองของเรามาจากฟาร์มของเราเพียงแห่งเดียว (Single Origin) และไม่มีการนำไข่จากฟาร์มอื่นมาปน เราเชื่อมั่นในมาตรฐานของไข่ไก่ทุกฟองของเรา</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- EGGS SECTION -->
+  <div class="about-scroll-wrapper" id="eggsScrollWrapper" style="--scroll-progress: 0;">
+    <div id="eggs-expanded" class="scroll-anchor"></div>
+    <section class="about-slide-container" id="eggs">
+
+      <div class="about-slide-bg">
+        <img src="../eggs.jpg" alt="ไข่ไก่ Pasture Raised คุณภาพสูง" class="about-bg-img" loading="lazy" />
+        <div class="about-slide-overlay"></div>
+        <p class="about-slide-eyebrow" data-i18n="eggs_eyebrow">PASTURE RAISED · NON-GMO FEED</p>
+        <div class="about-slide-bg-content">
+          <h2 class="about-slide-heading" data-i18n="eggs_heading">ไข่ไก่ของเรา</h2>
+        </div>
+      </div>
+
+      <div class="about-slide-panel">
+        <div class="about-slide-panel-inner">
+          <div class="panel-text-block">
+            <h3 class="panel-subtitle" data-i18n="eggs_panel_sub">RICH YOLKS.<br>FIRM WHITES.</h3>
+            <p class="panel-heading" data-i18n="eggs_side_heading">แม่ไก่ของเราใช้ชีวิตอยู่กลางทุ่งหญ้าทั้งวันตั้งแต่เช้าจรดค่ำ <br><br> <em>ไข่ไก่ที่ได้มีปริมาณโอเมก้า 3 วิตามินดี วิตามินอี และแร่ธาตุ สูงกว่าไข่ไก่ทั่วไป</em></p>
+          </div>
+          <div class="panel-image-block">
+            <img src="../pastureraised.jpg" alt="ไข่ไก่ Pasture Raised" loading="lazy" />
+          </div>
+          <div class="panel-footer-block">
+            <p class="panel-footer-text" data-i18n="eggs_subheader">ไข่ไก่ Pasture Raised คือไข่ไก่ที่มีมาตรฐานสูงที่สุด ไม่ว่าจะด้านคุณค่าทางสารอาหารหรือด้านคุณภาพชีวิตของสัตว์ ฟาร์มเราการันตีว่าแม่ไก่ทุกตัวได้ใช้ชีวิตในทุ่งหญ้าเปิด</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="about-scroll-wrapper" id="contactScrollWrapper" style="--scroll-progress: 0;">
+    <div id="contact-expanded" class="scroll-anchor"></div>
+    <section class="about-slide-container" id="contact-slide">
+
+      <div class="about-slide-bg slide-bg--right">
+        <img src="../contact.jpg" alt="ติดต่อฮอร์มกระชาย พาสเจอร์ฟาร์ม" class="about-bg-img" loading="lazy" />
+        <div class="about-slide-overlay"></div>
+      </div>
+
+      <div class="about-slide-panel slide-panel--left">
+        <div class="contact-slide-inner">
+          <h2 class="contact-huge-title" data-i18n="contact_title">ติดต่อเรา</h2>
+
+          <div class="contact-grid">
+            <div class="contact-intro-col">
+              <p class="contact-intro-text" data-i18n="contact_intro">เรารับคำสั่งซื้อจากร้านอาหารหรือธุรกิจอาหารต่างๆโดยตรง สำหรับการสั่งซื้อไข่ไก่ หรือสอบถามข้อสงสัยอื่นๆ สามารถติดต่อเราได้ตามช่องทางต่างๆ ดังนี้</p>
+            </div>
+
+            <div class="contact-details-grid">
+              <div class="contact-block contact-block--line">
+                <div class="contact-block-text">
+                  <h4 data-i18n="contact_h_new">Line Official Account</h4>
+                  <p data-i18n="contact_t_new1">@437vqbqw</p>
+                  <a href="#" data-i18n="contact_t_new2"></a>
+                </div>
+                <div class="line-qr-wrapper">
+                  <img src="https://qr-official.line.me/gs/M_437vqbqw_BW.png?oat_content=qr" alt="Line QR Code" class="line-qr" loading="lazy" />
+                </div>
+              </div>
+
+              <div class="contact-block">
+                <h4 data-i18n="contact_h_addr">ที่อยู่ฟาร์มของเรา</h4>
+                <a href="https://maps.app.goo.gl/3kBtWCB1ZJcwkwye9" target="_blank" data-i18n="contact_t_addr">154 ตำบล นิยมชัย อำเภอ สระโบสถ์ ลพบุรี 15240</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="contact-map">
+            <iframe
+              src="https://maps.google.com/maps?q=15.230962,100.943184&z=17&output=embed"
+              width="100%"
+              height="180"
+              style="border:0; display:block; margin-top:24px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="minimal-footer">
+    <div class="minimal-footer-inner">
+      <div class="mf-left">
+        <span data-i18n="footer_copy">© 2026 Hormkrachay Pasture Farm สงวนลิขสิทธิ์</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
